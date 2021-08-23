@@ -29,6 +29,7 @@ namespace BalancedBracketsNS
             foreach (char ch in str.ToCharArray())
             {
                 if (brackets >= 0) //check for misplaced brackets i.e. "]" before "["
+                    //checking for >= 0 means that any unordered pairs will show as negative in brackets tally
                 {
                     if (ch == '[')
                     {
